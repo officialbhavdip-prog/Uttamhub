@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uttamhub.com</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-appear"); return;
+      }
+        entry.target.classList.remove("in-appear");
+      
+    });
+  });
+  // {
+  //   threshold: 0.1 // Trigger when 10% of the element is in view
+  // }
+
+
+// Select all elements inside the body
+const allAnimatedElements = document.querySelectorAll('.animate-appear');
+allAnimatedElements.forEach((element) => 
+  observer.observe(element));
+});
+
+  </script>
+    <div class="nav ">
+        <!-- <div class="logo">
+            <img class="logo-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpaJEaaszHsE07Nk4N3p5nwLduTWcSK0AyK3-3_1IEuRA2txGWPebRcOkFVXMqWanRbYhBfmVwZ4eq7dC4NAnCFhQzq4di7UoAzHcH_at1F0d0HHkQEdCO9CxjLLjaFYbEdY-CENjpWkFoBfaZD4t3UfdSAoU110_VqNYgCvzqY9igs8zNigt1FpN8Wg6Y/w238-h320/UTTAMHUBLOGO.png" alt="logo img" loading="lazy">
+        </div> -->
+        <div class="brand-name">
+            <img class="brand-name-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3qAc-8MjUDA96FvYQr7EPgTlyHmBvrHF_5pt2BB8oZa6iLa0qWW_k01qubnY0CYXxeL0yArL-o3LTydRwDbGH9UfvEJ8APCiLmB6fh4Coa1rrJQDE6SwvV9DCcwMYsJpoQgobN3BPIjUwJSdfdbirGQGGJqfeqjYoJGaaCZaZ3Xq-5G3PQS7U_g_dJChj/s320/uttamhuBNAME.png" alt="brand name" loading="lazy">
+        </div>
+    </div>
+    <div class="nav-two animate-appear">
+        <!-- <div class="about-us"></div>
+        <div class="contact-us"></div> -->
+        <button id="about-us">about us</button>
+        <div id="about-us-container">
+            <p>Welcome to Uttam Hub – your one-stop <br>destination for essential services and daily <br>needs. We aim to make life easier by offering <br>a wide range of home essentials and women’s <br>daily needs, all in one place. Whether it's <br>household items, basic necessities, or <br>everyday solutions, we’ve got you covered with <br>trusted quality and prompt service. <br>
+                 <br>
+                We believe in providing convenience, comfort, <br>and care – straight to your doorstep.
+                <br>
+                <br>For any inquiries or assistance, feel free <br>to contact us at: +91 97243 62981
+                
+                Let Uttam Hub be your daily help hub!</p>
+        </div>
+        <script> 
+            const aboutUsButton = document.getElementById('about-us');
+            const aboutUsContainer = document.getElementById('about-us-container');
+        
+            // Ensure the container's style is set on initial load.
+            if (!aboutUsContainer.style.display) {
+                aboutUsContainer.style.display = 'none'; // Or 'block', depending on your initial desired state
+            }
+        
+            aboutUsButton.addEventListener('click', () => {
+                if (aboutUsContainer.style.display === 'none') {
+                    aboutUsContainer.style.display = 'block';
+                    aboutUsButton.textContent = 'Hide';
+                } else {
+                    aboutUsContainer.style.display = 'none';
+                    aboutUsButton.textContent = 'About Us';
+                }
+            });
+        </script>
+
+
+         <button id="contact-us">contact us</button>
+         <div id="contact-us-container">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Whether you have a question, need help, or want to know more about our services – feel free to reach out.</p>
+            <p>
+              📍 <strong>Location:</strong> Based in India<br>
+              📞 <strong>Phone:</strong> +91 97243 62981<br>
+              📞 <strong>Whatsapp:</strong> <a href="https://wa.me/9724362981?text=I%20am%20interested%20in%20your%20business%20/%20I%20need%20help
+              ">click here to msg</a><br>
+              🌐 <strong>Website:</strong> <a href="http://www.uttamhub.com" target="_blank">www.uttamhub.com</a><br>
+              📧 <strong>Email:</strong> org.uttamhub@gamil.com
+            </p>
+            <p>Or just give us a call – we’re always happy to help!</p>
+         </div>
+         <script> 
+         const contactUsButton = document. getElementById('contact-us');
+         const contactUsContainer = document.getElementById('contact-us-container');
+
+         // Ensure the container's style is set on initial load.
+        if (!contactUsContainer.style.display) {
+        contactUsContainer.style.display = 'none'; // Or 'block', depending on your initial desired state
+        }
+
+        contactUsButton.addEventListener('click', () => {
+        if (contactUsContainer.style.display === 'none') {
+            contactUsContainer.style.display = 'block';
+            contactUsButton.textContent = 'Hide';
+        } else {
+            contactUsContainer.style.display = 'none';
+            contactUsButton.textContent = 'contact Us';
+        }
+        });
+        </script>
+     </div>
+    <!-- <div class="slide animate-appear">
+        <div class="slider-container">
+          <div class="slider-track">
+            <a href="https://wa.me/9724362981?text=તમારી%20જરૂરિયાત%20છે%20(કેરી)%0Aઅમારી%20વેબસાઇટ%20www.uttamhub.com%20ના%20મધ્યમ%20થી%20અમારો%20સંપર્ક%20કરવા%20બદલ%20આભાર%0A
+            તમારે%20જોઈએ%20છે%20તે%20તમામ%20વસ્તુ%20તમને%20મળી%20જશે%20%0Aતમારી%20નજીક%20ના%20અમારા%20સ્ટોર%20પર%20થી%20અથવા%20તો%20હોમ%20ડિલિવરી%20દ્રારા%0A%0Aઅમારો%20મોબાઈલ%20નંબર%20સેવ%20કરો%0A9724362981%20જેથી%20તમે%20મેળવી%20શકો%20નવી%20અપડેટ%0A%0Awww.uttamhub.com"><div class="slide-item"><img class="slide-item-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi59YkSAWrTqh6477J-e__eYXXVTumoBBLJ-_EpfqqKoRu0V2yhl6NkjcNvP26hU0ljnUNDuMYhe8JHFcAfbDxueq2hlgFXCS7DUZAXRzsI1IoRdZ6HQC0FtH0ERvu3XGxRS_uYjaHauIub1NJwS_dj7JzzrqDYIJwZFPC4jbLDoAFMljO0luy6RihrbEU/s320/WhatsApp%20Image%202025-05-05%20at%2010.27.26_5fea2b22.jpg" alt="mango" loading="lazy">
+            <P>
+                fresh mangoes
+            </P></div></a>
+            <a href="https://wa.me/9724362981?text=તમારી%20જરૂરિયાત%20છે%20(અમેરિકન%20ડ્રાઇફ્રૂટ%20)%0Aઅમારી%20વેબસાઇટ%20www.uttamhub.com%20ના%20મધ્યમ%20થી%20અમારો%20સંપર્ક%20કરવા%20બદલ%20આભાર%0A
+            તમારે%20જોઈએ%20છે%20તે%20તમામ%20વસ્તુ%20તમને%20મળી%20જશે%20%0Aતમારી%20નજીક%20ના%20અમારા%20સ્ટોર%20પર%20થી%20અથવા%20તો%20હોમ%20ડિલિવરી%20દ્રારા%0A%0Aઅમારો%20મોબાઈલ%20નંબર%20સેવ%20કરો%0A9724362981%20જેથી%20તમે%20મેળવી%20શકો%20નવી%20અપડેટ%0A%0Awww.uttamhub.com"><div class="slide-item"><img class="slide-item-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiAlzOfCkYA_a95hqk4VkcEobut2ScgSR8G6R2-t8ep4tePYzSAGUXSXkNqMTpFi2TE9NsX4Vdz3zVtuNDFHkcYJ9nbHpR621iwn8Pa3ypYgo5H5A5DDCrmLy5X6Y8IKe9V5JXk3vkq9vfcfEEKJaZkOmLkOHuAxfHmCyOljQd7cM0UH_jOG-J4NRzx4s/s320/WhatsApp%20Image%202025-05-05%20at%2010.07.39_479e41a2.jpg" alt="mango" loading="lazy">
+                <P>
+                    spe. american dryfruit maththo
+                </P></div></a>
+             <div class="slide-item">Item 3</div>
+            <div class="slide-item">Item 4</div> 
+          </div>
+        </div>
+      </div>  -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        return;
+      }
+      entry.target.classList.remove("in-view");
+    });
+  }, { // Options object starts here
+    threshold: 0 // Trigger when 50% of the element is in view
+  });
+
+  // Select all elements with the class 'animate' inside the body
+  const allAnimatedElements = document.querySelectorAll('.animate');
+  allAnimatedElements.forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+    </script>
+
+
+ <section>
+    <a href="category/mahilla.html" class="category-link ">
+        <div class="category-container animate">
+          <img class="category-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilaW2ccdxuQ9WFoG9SKT6WevbFG6HYcS8_owlWLYn8xY1tHVq7lGzHhiTtTGy2p87_zyycCFl_cDF7EqCzENBew7PNP8ManDA_OgMKmTM8obfvptQvOnoTxbU9EqNbwKyuVL8HUR_I-2NVX6q-OnXZl2Dfckgp4j1XzYA5Adduh6EpU1gMHaW2quMq3dj7/s320/Gemini_Generated_Image_5uads45uads45uad.png" alt="img" loading="lazy">
+          <div class="category-des">
+            <h1> Jovial Bee's </h1>
+            <p>Plastic Manufracturing Company</p>
+            <p>All type of job work</p>
+            <p> </p>
+            <p> </p>
+            <p style="text-decoration: underline;  color: blue;">click to go</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="category/trading.html" class="category-link ">
+        <div class="category-container animate">
+          <!-- <img class="category-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhWo3vD_4-OxD5UDcLV-w2OhdSyYDutvctXn4y7iI_sxNJnDBhCXa3RNe5P-Q6fE-p00t5VMaA2OH1XU1sqHVwJ767BM-OE5Ck2vXFgAbf68SqGm8iLzQdK2gbtaY-XUhEVkodStNP0OamYQlO7QbKSfZhi1SEkqG3Pl4Te-Ua-zoRwxiW299ZDwMF1p8o" alt="img" loading="lazy"> -->
+          <div class="category-des">
+            <h1>trading and wholsale</h1>
+            <p>trading and wholsale of all items</p>
+            <p>store supply</p>
+            <!-- <p></p>
+            <p>જોવા માટે ક્લિક કરો </p> -->
+            <p style="text-decoration: underline;  color: blue;">click to go</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="category/b2b.html" class="category-link ">
+        <div class="category-container animate">
+          <!-- <img class="category-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhWo3vD_4-OxD5UDcLV-w2OhdSyYDutvctXn4y7iI_sxNJnDBhCXa3RNe5P-Q6fE-p00t5VMaA2OH1XU1sqHVwJ767BM-OE5Ck2vXFgAbf68SqGm8iLzQdK2gbtaY-XUhEVkodStNP0OamYQlO7QbKSfZhi1SEkqG3Pl4Te-Ua-zoRwxiW299ZDwMF1p8o" alt="img" loading="lazy"> -->
+          <div class="category-des">
+            <h1>business related</h1>
+            <p>machine job work</p>
+            <p>other</p>
+            <!-- <p></p>
+            <p>જોવા માટે ક્લિક કરો </p> -->
+            <p style="text-decoration: underline;  color: blue;">click to go</p>
+          </div>
+        </div>
+      </a>
+    <div class="category-container animate">
+        comming soon
+    </div>
+    <div class="category-container animate">comming soon</div>
+    <div class="category-container animate">comming soon</div>
+    
+ </section>
+    
+</body>
+</html>
