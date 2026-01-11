@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jovial Bee's </title>
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <header>
+        <!-- <img class="category-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhWo3vD_4-OxD5UDcLV-w2OhdSyYDutvctXn4y7iI_sxNJnDBhCXa3RNe5P-Q6fE-p00t5VMaA2OH1XU1sqHVwJ767BM-OE5Ck2vXFgAbf68SqGm8iLzQdK2gbtaY-XUhEVkodStNP0OamYQlO7QbKSfZhi1SEkqG3Pl4Te-Ua-zoRwxiW299ZDwMF1p8o" alt="img"> -->
+        <h1> JOVIAL BEE'S </h1>
+        <a href="../index.html" style="font-size: 0.8em;">go to the home</a>
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        return;
+      }
+      entry.target.classList.remove("in-view");
+    });
+  }, { // Options object starts here
+    threshold: 0 // Trigger when 50% of the element is in view
+  });
+
+  // Select all elements with the class 'animate' inside the body
+  const allAnimatedElements = document.querySelectorAll('.animate');
+  allAnimatedElements.forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+
+  </script>
+    <!-- <div class="about animate">
+        <h1> somthing</h1>
+            <p>હવે તમારે ચિંતા કરવાની કોઈ જરૂર નથી </p>
+            <p>rasoi no saman</p>
+            <p>meman ne jamvanu hoy</p>
+            <p>amaro contact kro</p>
+    </div> -->
+
+    <section class="container animate">
+        <h1 class="item-heading">Disposable spoon </h1>
+        <a href="https://wa.me/9724362981?text=I%20want%20your%20produc%20twww.uttamhub.com">
+            <div class="item">
+                <div class="item-display">
+                    <img class="item-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivqnkD0vRe4XFFKXZUXrky3drqx20QlW_oZRmC1hCbruDefWsXNzrkIHsVycD_wvGAuTmFKI1TrdA7TjWUNcSiOsOaxf9iMk1-YTaeadOhLd7uRmW0JzZeOQPh06AReVDg2o8CzAp6JLhYxMfJeusOUwaSynErvudu9HS3ZAsxk5w14LYv6X06AE0NOzfk/s320/IMG-20230911-WA0024.jpg" alt="item-img" loading="lazy">
+                    <P class="item-name">Metro Spoon</P>
+                </div>
+            </div>
+        </a>
+
+       <!-- <a href="https://wa.me/9724362981?text=તમારી%20જરૂરિયાત%20છે%20(મિલ્ક%20શેક)%0Aઅમારી%20વેબસાઇટ%20www.uttamhub.com%20ના%20મધ્યમ%20થી%20અમારો%20સંપર્ક%20કરવા%20બદલ%20આભાર%0A
+        તમારે%20જોઈએ%20છે%20તે%20તમામ%20વસ્તુ%20તમને%20મળી%20જશે%20%0Aતમારી%20નજીક%20ના%20અમારા%20સ્ટોર%20પર%20થી%20અથવા%20તો%20હોમ%20ડિલિવરી%20દ્રારા%0A%0Aઅમારો%20મોબાઈલ%20નંબર%20સેવ%20કરો%0A9724362981%20જેથી%20તમે%20મેળવી%20શકો%20નવી%20અપડેટ%0A%0Awww.uttamhub.com">
+            <div class="item">
+                <div class="item-display">
+                    <img class="item-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhIeTW2w5VttdsEBdcQLcxwP1rU5Svw0oA9VzBMVWCGe6ocE6gBX6EjB71uAVoCiNZKNKafo9kPreSQZ6lGNN_NH0zE0PjCTZ-Xav1moSxepWuU-lrPIRYiDec1D6LAvVZxcxVFRodPNsNOxQbn5vAs27_qZDbTB-ahb-Y3kukkPQtn6uR8hmWTHmxM7Os" alt="item-img" loading="lazy">
+                    <P class="item-name">milkshake liquid</P>
+                </div>
+            </div>
+        </a> -->
+
+       
+    </section>
+
+   
+</body>
+</html>
